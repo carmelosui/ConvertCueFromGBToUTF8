@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C56B71F71AD58B1D00BB9880 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B71F61AD58B1D00BB9880 /* AppDelegate.m */; };
+		C56B71F91AD58B1D00BB9880 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B71F81AD58B1D00BB9880 /* main.m */; };
+		C56B71FC1AD58B1D00BB9880 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B71FB1AD58B1D00BB9880 /* ViewController.m */; };
+		C56B71FE1AD58B1D00BB9880 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56B71FD1AD58B1D00BB9880 /* Images.xcassets */; };
+		C56B72011AD58B1D00BB9880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56B71FF1AD58B1D00BB9880 /* Main.storyboard */; };
+		C56B720D1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C56B720C1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C56B72071AD58B1D00BB9880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C56B71E81AD58B1D00BB9880 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C56B71EF1AD58B1D00BB9880;
+			remoteInfo = ConvertCueFromGBToUTF8;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C56B71F01AD58B1D00BB9880 /* ConvertCueFromGBToUTF8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConvertCueFromGBToUTF8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56B71F41AD58B1D00BB9880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56B71F51AD58B1D00BB9880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C56B71F61AD58B1D00BB9880 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C56B71F81AD58B1D00BB9880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C56B71FA1AD58B1D00BB9880 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C56B71FB1AD58B1D00BB9880 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C56B71FD1AD58B1D00BB9880 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C56B72001AD58B1D00BB9880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C56B72061AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvertCueFromGBToUTF8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56B720B1AD58B1D00BB9880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56B720C1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertCueFromGBToUTF8Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C56B71ED1AD58B1D00BB9880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56B72031AD58B1D00BB9880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C56B71E71AD58B1D00BB9880 = {
+			isa = PBXGroup;
+			children = (
+				C56B71F21AD58B1D00BB9880 /* ConvertCueFromGBToUTF8 */,
+				C56B72091AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests */,
+				C56B71F11AD58B1D00BB9880 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C56B71F11AD58B1D00BB9880 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C56B71F01AD58B1D00BB9880 /* ConvertCueFromGBToUTF8.app */,
+				C56B72061AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C56B71F21AD58B1D00BB9880 /* ConvertCueFromGBToUTF8 */ = {
+			isa = PBXGroup;
+			children = (
+				C56B71F51AD58B1D00BB9880 /* AppDelegate.h */,
+				C56B71F61AD58B1D00BB9880 /* AppDelegate.m */,
+				C56B71FA1AD58B1D00BB9880 /* ViewController.h */,
+				C56B71FB1AD58B1D00BB9880 /* ViewController.m */,
+				C56B71FD1AD58B1D00BB9880 /* Images.xcassets */,
+				C56B71FF1AD58B1D00BB9880 /* Main.storyboard */,
+				C56B71F31AD58B1D00BB9880 /* Supporting Files */,
+			);
+			path = ConvertCueFromGBToUTF8;
+			sourceTree = "<group>";
+		};
+		C56B71F31AD58B1D00BB9880 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C56B71F41AD58B1D00BB9880 /* Info.plist */,
+				C56B71F81AD58B1D00BB9880 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C56B72091AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C56B720C1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.m */,
+				C56B720A1AD58B1D00BB9880 /* Supporting Files */,
+			);
+			path = ConvertCueFromGBToUTF8Tests;
+			sourceTree = "<group>";
+		};
+		C56B720A1AD58B1D00BB9880 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C56B720B1AD58B1D00BB9880 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C56B71EF1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56B72101AD58B1D00BB9880 /* Build configuration list for PBXNativeTarget "ConvertCueFromGBToUTF8" */;
+			buildPhases = (
+				C56B71EC1AD58B1D00BB9880 /* Sources */,
+				C56B71ED1AD58B1D00BB9880 /* Frameworks */,
+				C56B71EE1AD58B1D00BB9880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConvertCueFromGBToUTF8;
+			productName = ConvertCueFromGBToUTF8;
+			productReference = C56B71F01AD58B1D00BB9880 /* ConvertCueFromGBToUTF8.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C56B72051AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56B72131AD58B1D00BB9880 /* Build configuration list for PBXNativeTarget "ConvertCueFromGBToUTF8Tests" */;
+			buildPhases = (
+				C56B72021AD58B1D00BB9880 /* Sources */,
+				C56B72031AD58B1D00BB9880 /* Frameworks */,
+				C56B72041AD58B1D00BB9880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C56B72081AD58B1D00BB9880 /* PBXTargetDependency */,
+			);
+			name = ConvertCueFromGBToUTF8Tests;
+			productName = ConvertCueFromGBToUTF8Tests;
+			productReference = C56B72061AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C56B71E81AD58B1D00BB9880 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Carmelo Sui";
+				TargetAttributes = {
+					C56B71EF1AD58B1D00BB9880 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C56B72051AD58B1D00BB9880 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = C56B71EF1AD58B1D00BB9880;
+					};
+				};
+			};
+			buildConfigurationList = C56B71EB1AD58B1D00BB9880 /* Build configuration list for PBXProject "ConvertCueFromGBToUTF8" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C56B71E71AD58B1D00BB9880;
+			productRefGroup = C56B71F11AD58B1D00BB9880 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C56B71EF1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8 */,
+				C56B72051AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C56B71EE1AD58B1D00BB9880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56B71FE1AD58B1D00BB9880 /* Images.xcassets in Resources */,
+				C56B72011AD58B1D00BB9880 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56B72041AD58B1D00BB9880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C56B71EC1AD58B1D00BB9880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56B71FC1AD58B1D00BB9880 /* ViewController.m in Sources */,
+				C56B71F91AD58B1D00BB9880 /* main.m in Sources */,
+				C56B71F71AD58B1D00BB9880 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56B72021AD58B1D00BB9880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56B720D1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C56B72081AD58B1D00BB9880 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C56B71EF1AD58B1D00BB9880 /* ConvertCueFromGBToUTF8 */;
+			targetProxy = C56B72071AD58B1D00BB9880 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C56B71FF1AD58B1D00BB9880 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56B72001AD58B1D00BB9880 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C56B720E1AD58B1D00BB9880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C56B720F1AD58B1D00BB9880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C56B72111AD58B1D00BB9880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ConvertCueFromGBToUTF8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C56B72121AD58B1D00BB9880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ConvertCueFromGBToUTF8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C56B72141AD58B1D00BB9880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ConvertCueFromGBToUTF8Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConvertCueFromGBToUTF8.app/Contents/MacOS/ConvertCueFromGBToUTF8";
+			};
+			name = Debug;
+		};
+		C56B72151AD58B1D00BB9880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ConvertCueFromGBToUTF8Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConvertCueFromGBToUTF8.app/Contents/MacOS/ConvertCueFromGBToUTF8";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C56B71EB1AD58B1D00BB9880 /* Build configuration list for PBXProject "ConvertCueFromGBToUTF8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56B720E1AD58B1D00BB9880 /* Debug */,
+				C56B720F1AD58B1D00BB9880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C56B72101AD58B1D00BB9880 /* Build configuration list for PBXNativeTarget "ConvertCueFromGBToUTF8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56B72111AD58B1D00BB9880 /* Debug */,
+				C56B72121AD58B1D00BB9880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C56B72131AD58B1D00BB9880 /* Build configuration list for PBXNativeTarget "ConvertCueFromGBToUTF8Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56B72141AD58B1D00BB9880 /* Debug */,
+				C56B72151AD58B1D00BB9880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C56B71E81AD58B1D00BB9880 /* Project object */;
+}
