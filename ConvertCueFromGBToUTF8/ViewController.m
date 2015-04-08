@@ -95,14 +95,15 @@
     }
     
     for (NSString *path in contentsOfDirectory) {
+        NSString *fullPath = [directory stringByAppendingPathComponent:path];
         BOOL isDirectory = NO;
-        [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&isDirectory];
+        [[NSFileManager defaultManager] fileExistsAtPath:fullPath isDirectory:&isDirectory];
         NSMutableArray *subDirectories = [NSMutableArray array];
         if (isDirectory) {
-            [subDirectories addObject:path];
+            [subDirectories addObject:fullPath];
         }
         else {
-            [self convertFile:path];
+            [self convertFile:fullPath];
         }
         for (NSString *directory in subDirectories) {
             [self convertDirectory:directory];
