@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#define TRY_STOP_AND_RETURN_IF_NEEDED do {if (self.tryingStopping) {[self convertingStopped]; return;}} while(0)
+
 @interface ViewController ()
 
 @property (weak) IBOutlet NSTextField *filePathTextField;
@@ -18,20 +20,19 @@
 
 @property (assign) BOOL recursivelyConvertingThisTime;
 @property (nonatomic, assign, getter=isConverting) BOOL converting;
+@property (nonatomic, assign) BOOL tryingStopping;
+@property (nonatomic, strong) dispatch_queue_t convertingSerialQueue;
+@property (nonatomic, strong) NSMutableSet *convertingTasks;
 
 @end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
-}
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-    
-    // Update the view, if already loaded.
+    self.convertingSerialQueue = dispatch_queue_create("cue converting queue", NULL);
+    self.convertingTasks = [NSMutableSet set];
 }
 
 - (IBAction)startConvertButtonPressed:(id)sender {
@@ -63,11 +64,12 @@
 
 - (void)stopConverting
 {
-    
+    self.tryingStopping = YES;
 }
 
 -(void)startConverting
 {
+    [self convertingStarted];
     NSString *path = self.filePathTextField.stringValue;
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -75,20 +77,50 @@
     BOOL fileExist = [fileManager fileExistsAtPath:path isDirectory:&pathIsDirectory];
     if (!fileExist) {
         [self outputError:[NSString stringWithFormat:@"file not exist \"%@\"", path]];
+        [self convertingStopped];
         return;
     }
     
     if (pathIsDirectory) {
         self.recursivelyConvertingThisTime = (self.convertRecursivelyCheckbox.state == NSOnState);
-        [self convertDirectory:path];
+        dispatch_async(self.convertingSerialQueue, ^{
+            [self convertDirectory:path];
+            [self convertingStopped];
+        });
         return;
     }
     
-    [self convertFile:path];
+    dispatch_async(self.convertingSerialQueue, ^{
+        [self convertFile:path];
+        [self convertingStopped];
+    });
+}
+
+-(void)convertingStarted
+{
+    self.converting = YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.startConvertButton.title = @"stop";
+        self.chooseFileButton.enabled = NO;
+    });
+}
+
+-(void)convertingStopped
+{
+    self.converting = NO;
+    self.tryingStopping = NO;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.startConvertButton.title = @"start convert";
+        self.chooseFileButton.enabled = YES;
+    });
 }
 
 - (void)convertDirectory:(NSString*)directory
 {
+    TRY_STOP_AND_RETURN_IF_NEEDED;
+    
+    sleep(5);
+    
     NSError *error = nil;
     NSArray *contentsOfDirectory = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:directory error:&error];
     if (error) {
@@ -97,6 +129,8 @@
     }
     
     for (NSString *path in contentsOfDirectory) {
+        TRY_STOP_AND_RETURN_IF_NEEDED;
+        
         NSString *fullPath = [directory stringByAppendingPathComponent:path];
         BOOL isDirectory = NO;
         [[NSFileManager defaultManager] fileExistsAtPath:fullPath isDirectory:&isDirectory];
@@ -109,6 +143,8 @@
         }
         if (self.recursivelyConvertingThisTime) {
             for (NSString *directory in subDirectories) {
+                TRY_STOP_AND_RETURN_IF_NEEDED;
+                
                 [self convertDirectory:directory];
             }
         }
@@ -122,6 +158,8 @@
 
 - (void)convertFile:(NSString*)path
 {
+    TRY_STOP_AND_RETURN_IF_NEEDED;
+    
     if (![self fileTypeIsForConvert:path]) {
         return;
     }
@@ -161,8 +199,10 @@
 
 - (void)appendToTextView:(NSAttributedString*)text
 {
-    [[self.outputTextField textStorage] appendAttributedString:text];
-    [self.outputTextField scrollRangeToVisible:NSMakeRange([[self.outputTextField string] length], 0)];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[self.outputTextField textStorage] appendAttributedString:text];
+        [self.outputTextField scrollRangeToVisible:NSMakeRange([[self.outputTextField string] length], 0)];
+    });
 }
 
 @end
