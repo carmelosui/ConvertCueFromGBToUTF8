@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207629.530489"
+            timestampString = "450237913.134927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "-outputLog:"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207629.530489"
+            timestampString = "450237913.134927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "-outputError:"
             landmarkType = "5">
          </BreakpointContent>
@@ -48,15 +48,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207552.96681"
+            timestampString = "450238001.31062"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-convertDirectory:"
             landmarkType = "5">
          </BreakpointContent>
@@ -68,12 +68,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207553.678785"
+            timestampString = "450238028.673721"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "-convertDirectory:"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "-convertFile:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -84,12 +84,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207554.352991"
+            timestampString = "450238029.831755"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "-convertDirectory:"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "-convertFile:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -100,12 +100,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207629.530489"
+            timestampString = "450238030.721988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-convertDirectory:"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "-convertFile:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -116,28 +116,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207629.530489"
+            timestampString = "450238043.53262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "-convertDirectory:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ConvertCueFromGBToUTF8/ViewController.m"
-            timestampString = "450207629.530489"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "-convertDirectory:"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "-convertFile:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

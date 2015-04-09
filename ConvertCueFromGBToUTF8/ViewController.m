@@ -16,6 +16,7 @@
 @property (strong) IBOutlet NSTextView *outputTextField;
 @property (weak) IBOutlet NSButton *chooseFileButton;
 
+@property (assign) BOOL recursivelyConvertingThisTime;
 @property (nonatomic, assign, getter=isConverting) BOOL converting;
 
 @end
@@ -78,6 +79,7 @@
     }
     
     if (pathIsDirectory) {
+        self.recursivelyConvertingThisTime = (self.convertRecursivelyCheckbox.state == NSOnState);
         [self convertDirectory:path];
         return;
     }
@@ -105,8 +107,10 @@
         else {
             [self convertFile:fullPath];
         }
-        for (NSString *directory in subDirectories) {
-            [self convertDirectory:directory];
+        if (self.recursivelyConvertingThisTime) {
+            for (NSString *directory in subDirectories) {
+                [self convertDirectory:directory];
+            }
         }
     }
 }
