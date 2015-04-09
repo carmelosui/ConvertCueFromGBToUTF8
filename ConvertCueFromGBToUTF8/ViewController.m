@@ -28,6 +28,15 @@
 
 @implementation ViewController
 
+#pragma mark - configurations
+
+- (NSStringEncoding)sourceEncoding
+{
+    return CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGBK_95);
+}
+
+#pragma mark - UIControl
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -115,6 +124,7 @@
     });
 }
 
+#pragma mark - converting
 - (void)convertDirectory:(NSString*)directory
 {
     TRY_STOP_AND_RETURN_IF_NEEDED;
@@ -165,7 +175,7 @@
     }
     
     NSError *error = nil;
-    NSString *fileContent = [NSString stringWithContentsOfFile:path encoding:CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGBK_95) error:&error];
+    NSString *fileContent = [NSString stringWithContentsOfFile:path encoding:[self sourceEncoding] error:&error];
     if (error) {
         [self outputFileConvertingFail:path];
         return;
